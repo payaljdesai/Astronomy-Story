@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Astronomy PicVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AstronomyPicVC" customModule="WallMart_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jK5-4N-vSh">
+                                <rect key="frame" x="20" y="64" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iaF-Rn-LpU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.98585681490061772" green="0.33452587798818162" blue="0.2258133561643835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BCt-ge-DSl">
+                                <rect key="frame" x="20" y="112" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="DBv-Os-knN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjA-l9-Gw6">
+                                <rect key="frame" x="29" y="359" width="365" height="464"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.98585681489999999" green="0.88568169990000001" blue="0.22581335620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BCt-ge-DSl" secondAttribute="trailing" constant="20" id="0at-UD-IiI"/>
+                            <constraint firstItem="jK5-4N-vSh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1GS-5o-BJP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jK5-4N-vSh" secondAttribute="trailing" constant="20" id="4xj-eo-hFu"/>
+                            <constraint firstItem="jK5-4N-vSh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7EZ-oq-stX"/>
+                            <constraint firstItem="XjA-l9-Gw6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="9bF-Qg-JWz"/>
+                            <constraint firstItem="XjA-l9-Gw6" firstAttribute="top" secondItem="BCt-ge-DSl" secondAttribute="bottom" constant="47" id="ADu-M8-HUN"/>
+                            <constraint firstItem="BCt-ge-DSl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lpp-aV-GDH"/>
+                            <constraint firstItem="BCt-ge-DSl" firstAttribute="top" secondItem="jK5-4N-vSh" secondAttribute="bottom" constant="8" symbolic="YES" id="fAL-iD-i6o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XjA-l9-Gw6" secondAttribute="trailing" constant="20" id="o8v-6E-gSl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XjA-l9-Gw6" secondAttribute="bottom" constant="39" id="vh5-g3-7aw"/>
+                            <constraint firstItem="BCt-ge-DSl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="w6e-hn-dg2"/>
+                            <constraint firstItem="jK5-4N-vSh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wJE-bw-iqw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dayPicImagView" destination="BCt-ge-DSl" id="ktJ-O4-le6"/>
+                        <outlet property="explanationLbl" destination="XjA-l9-Gw6" id="1Ue-98-6ZA"/>
+                        <outlet property="titleLbl" destination="jK5-4N-vSh" id="EgI-6Y-wzG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="102.45535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
